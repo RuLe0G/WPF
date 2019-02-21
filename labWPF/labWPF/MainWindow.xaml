@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="plus" Content="+" HorizontalAlignment="Left" Margin="265,273,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="plus_Click"/>
+        <Button x:Name="ad" Content="*" HorizontalAlignment="Left" Margin="265,311,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="div" Content="/" HorizontalAlignment="Left" Margin="360,311,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="360,273,0,0" VerticalAlignment="Top" Width="75" IsCancel="True"/>
+        <TextBox x:Name="A" HorizontalAlignment="Left" Height="23" Margin="201,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="B" HorizontalAlignment="Left" Height="23" Margin="403,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="inp" Content="=" HorizontalAlignment="Left" Margin="577,195,0,0" VerticalAlignment="Top" Height="39" Width="54"/>
+
     </Grid>
 </Window>

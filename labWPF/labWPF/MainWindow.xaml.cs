@@ -23,6 +23,14 @@ namespace labWPF
         public MainWindow()
         {
             InitializeComponent();
+            A.Text = "A";
+            B.Text = "B";
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+
+            inp.Content = "";
         }
     }
 }
