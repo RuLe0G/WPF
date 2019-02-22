@@ -5,15 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:labWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="250" Width="400">
     <Grid>
-        <Button x:Name="plus" Content="+" HorizontalAlignment="Left" Margin="265,273,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="plus_Click"/>
-        <Button x:Name="ad" Content="*" HorizontalAlignment="Left" Margin="265,311,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="div" Content="/" HorizontalAlignment="Left" Margin="360,311,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="360,273,0,0" VerticalAlignment="Top" Width="75" IsCancel="True"/>
-        <TextBox x:Name="A" HorizontalAlignment="Left" Height="23" Margin="201,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="B" HorizontalAlignment="Left" Height="23" Margin="403,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="inp" Content="=" HorizontalAlignment="Left" Margin="577,195,0,0" VerticalAlignment="Top" Height="39" Width="54"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="plus" Content="+" HorizontalAlignment="Left" Margin="35,119,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="plus_Click"/>
+        <Button x:Name="ad" Content="*" HorizontalAlignment="Left" Margin="195,119,0,0" VerticalAlignment="Top" Width="75" Click="Ad_Click"/>
+        <Button x:Name="div" Content="/" HorizontalAlignment="Left" Margin="275,119,0,0" VerticalAlignment="Top" Width="75" Click="Div_Click"/>
+        <Button x:Name="minus" Content="-" HorizontalAlignment="Left" Margin="115,119,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="Minus_Click"/>
+        <TextBox x:Name="A" HorizontalAlignment="Left" Height="23" Margin="35,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="B" HorizontalAlignment="Left" Height="23" Margin="173,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="inp" Content="" HorizontalAlignment="Left" Margin="321,69,0,0" VerticalAlignment="Top" Height="23" Width="44"/>
+        <Label x:Name="nothing" Content="=" HorizontalAlignment="Left" Margin="296,69,0,0" VerticalAlignment="Top" Height="23" Width="20"/>
+        <Label x:Name="character" Content="" HorizontalAlignment="Left" Margin="155,69,0,0" VerticalAlignment="Top" Height="23" Width="20" RenderTransformOrigin="-5.64,0.27"/>
 
     </Grid>
 </Window>

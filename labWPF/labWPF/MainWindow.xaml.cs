@@ -25,12 +25,44 @@ namespace labWPF
             InitializeComponent();
             A.Text = "A";
             B.Text = "B";
+
+        
         }
 
         private void plus_Click(object sender, RoutedEventArgs e)
         {
+            int Ra = Int32.Parse(A.Text);
+            int Rb = Int32.Parse(B.Text);
+            string rs = Convert.ToString(Ra + Rb);
+                 inp.Content = rs;
+            character.Content = plus.Content;
+        }
 
-            inp.Content = "";
+        private void Minus_Click(object sender, RoutedEventArgs e)
+        {
+            int Ra = Int32.Parse(A.Text);
+            int Rb = Int32.Parse(B.Text);
+            string rs = Convert.ToString(Ra - Rb);
+            inp.Content = rs;
+            character.Content = minus.Content;
+        }
+
+        private void Ad_Click(object sender, RoutedEventArgs e)
+        {
+            int Ra = Int32.Parse(A.Text);
+            int Rb = Int32.Parse(B.Text);
+            string rs = Convert.ToString(Ra * Rb);
+            inp.Content = rs;
+            character.Content = ad.Content;
+        }
+
+        private void Div_Click(object sender, RoutedEventArgs e)
+        {
+            double Ra = Double.Parse(A.Text);
+            double Rb = Double.Parse(B.Text);
+            string rs = Convert.ToString(Ra / Rb);
+            inp.Content = rs;
+            character.Content = div.Content;
         }
     }
 }
