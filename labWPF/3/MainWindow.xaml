@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListBox x:Name="Lb1" HorizontalAlignment="Left" Height="176" Margin="10,67,0,0" VerticalAlignment="Top" Width="109" SelectionChanged="Lb1_SelectionChanged">
+            <ListBoxItem Content="Меркурий"/>
+            <ListBoxItem Content="Венера"/>
+            <ListBoxItem Content="Земля"/>
+            <ListBoxItem Content="Марс"/>
+            <ListBoxItem Content="Юпитер"/>
+            <ListBoxItem Content="Сатурн"/>
+            <ListBoxItem Content="Уран"/>
+            <ListBoxItem Content="Нептун"/>
+        </ListBox>
+        <Label x:Name="InpLb" Content="" HorizontalAlignment="Left" Height="176" Margin="141,67,0,0" VerticalAlignment="Top" Width="643"/>
+
     </Grid>
 </Window>
