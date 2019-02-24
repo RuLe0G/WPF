@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ComboBox x:Name="years" HorizontalAlignment="Left" Margin="70,72,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Years_SelectionChanged"/>
+        <ComboBox x:Name="month" HorizontalAlignment="Left" Margin="234,72,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Month_SelectionChanged" IsEnabled="False"/>
+        <ComboBox x:Name="day" HorizontalAlignment="Left" Margin="394,72,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False" SelectionChanged="Day_SelectionChanged"/>
+        <Label x:Name="Lb" Content="" HorizontalAlignment="Left" Margin="70,123,0,0" VerticalAlignment="Top" Height="126" Width="444"/>
+
     </Grid>
 </Window>
