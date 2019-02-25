@@ -65,13 +65,13 @@ namespace _4
 
         private void Day_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            int Tyear = 2019;
-            int TMonth = 02;
-            int Tday = 24;
+            int Tyear = DateTime.Now.Year;
+            int TMonth = DateTime.Now.Month;
+            int Tday = DateTime.Now.Day;
             int t = (Tyear - Convert.ToInt32(years.SelectedItem));
 
             Lb.Content = ("Разница в годах до нашего времени сотовляет.. " + t) +
-                "\n Разница в месяцах до нашего времени сотовляет.. " + ((t * 12) + (TMonth - Convert.ToInt32(month.SelectedItem)));
+                "\n Разница в месяцах до нашего времени сотовляет.. " + ((t * 12) + (TMonth - Convert.ToInt32(month.SelectedItem))); ;
 
 
         }

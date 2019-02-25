@@ -1,0 +1,19 @@
+﻿<Window x:Class="true_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:true_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="l1" Content="" HorizontalAlignment="Left" Margin="114,170,0,0" VerticalAlignment="Top" Height="95" Width="441" FontSize="48"/>
+        <Button x:Name="Star" Content="старт" HorizontalAlignment="Left" Margin="84,294,0,0" VerticalAlignment="Top" Width="127" Height="66"/>
+        <Button x:Name="Sto" Content="стоп" HorizontalAlignment="Left" Margin="293,294,0,0" VerticalAlignment="Top" Width="137" Height="66"/>
+        <Button x:Name="reset" Content="сброс" HorizontalAlignment="Left" Margin="505,294,0,0" VerticalAlignment="Top" Width="139" Height="66"/>
+        <CheckBox x:Name="hou" Content="Час" HorizontalAlignment="Left" Margin="593,210,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <CheckBox x:Name="min" Content="Мин" HorizontalAlignment="Left" Margin="593,190,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <CheckBox x:Name="sec" Content="Сек" HorizontalAlignment="Left" Margin="593,170,0,0" VerticalAlignment="Top" IsChecked="True"/>
+
+    </Grid>
+</Window>
