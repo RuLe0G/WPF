@@ -24,6 +24,7 @@ namespace _3
         {
             InitializeComponent();
 
+
         }
 
         private void Lb1_SelectionChanged(object sender, SelectionChangedEventArgs e)

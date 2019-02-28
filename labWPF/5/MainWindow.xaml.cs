@@ -40,7 +40,7 @@ namespace _5
 
             while ((line = file.ReadLine()) != null)
             {
-                inp.Text = line;
+                inp.Text += line;
             }
             file.Close();
             }
@@ -52,15 +52,16 @@ namespace _5
             dlg.DefaultExt = ".txt";
             dlg.Filter = "Text documents (.txt)|*.txt";
             dlg.ShowDialog();
+            
 
-            string lines = "qwerty";
+
+            string line = inp.Text;
 
             using (StreamWriter outputFile = new StreamWriter(dlg.FileName))
             {
-                foreach (char line in lines)
-                {
+
                     outputFile.WriteLine(line);
-                }
+
             }
             
         }

@@ -8,9 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label x:Name="l1" Content="" HorizontalAlignment="Left" Margin="114,170,0,0" VerticalAlignment="Top" Height="95" Width="441" FontSize="48"/>
-        <Button x:Name="Star" Content="старт" HorizontalAlignment="Left" Margin="84,294,0,0" VerticalAlignment="Top" Width="127" Height="66"/>
-        <Button x:Name="Sto" Content="стоп" HorizontalAlignment="Left" Margin="293,294,0,0" VerticalAlignment="Top" Width="137" Height="66"/>
-        <Button x:Name="reset" Content="сброс" HorizontalAlignment="Left" Margin="505,294,0,0" VerticalAlignment="Top" Width="139" Height="66"/>
+        <Button x:Name="Star" Content="старт" HorizontalAlignment="Left" Margin="84,294,0,0" VerticalAlignment="Top" Width="127" Height="66" Click="Star_Click"/>
+        <Button x:Name="Sto" Content="стоп" HorizontalAlignment="Left" Margin="293,294,0,0" VerticalAlignment="Top" Width="137" Height="66" Click="Sto_Click"/>
+        <Button x:Name="reset" Content="сброс" HorizontalAlignment="Left" Margin="505,294,0,0" VerticalAlignment="Top" Width="139" Height="66" Click="reset_Click"/>
         <CheckBox x:Name="hou" Content="Час" HorizontalAlignment="Left" Margin="593,210,0,0" VerticalAlignment="Top" IsChecked="True"/>
         <CheckBox x:Name="min" Content="Мин" HorizontalAlignment="Left" Margin="593,190,0,0" VerticalAlignment="Top" IsChecked="True"/>
         <CheckBox x:Name="sec" Content="Сек" HorizontalAlignment="Left" Margin="593,170,0,0" VerticalAlignment="Top" IsChecked="True"/>
