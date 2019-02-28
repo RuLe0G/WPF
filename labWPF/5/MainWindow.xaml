@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="inp" HorizontalAlignment="Left" Height="297" Margin="232,55,0,0" VerticalAlignment="Top" Width="531"/>
         <Menu HorizontalAlignment="Left" Height="160" Margin="46,55,0,0" VerticalAlignment="Top" Width="181">
             <MenuItem Header="Загрузить" Height="83" Width="181" Click="MenuItem_Click"/>
             <MenuItem Header="Сохранить" Height="78" Width="181" Click="MenuItem_Click_1"/>
         </Menu>
+        <TextBox x:Name="inp" HorizontalAlignment="Left" Height="304" Margin="232,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="499"/>
 
     </Grid>
 </Window>

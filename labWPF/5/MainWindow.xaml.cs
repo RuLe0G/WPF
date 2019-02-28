@@ -40,7 +40,7 @@ namespace _5
 
             while ((line = file.ReadLine()) != null)
             {
-                inp.Items.Add(line);
+                inp.Text = line;
             }
             file.Close();
             }
@@ -63,6 +63,8 @@ namespace _5
                 }
             }
             
-        }  
         }
+
+
+    }
     }
